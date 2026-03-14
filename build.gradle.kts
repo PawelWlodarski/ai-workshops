@@ -22,9 +22,12 @@ extra["springAiVersion"] = "2.0.0-M2"
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-webmvc")
-    implementation("org.springframework.ai:spring-ai-starter-model-ollama")
+    //implementation("org.springframework.ai:spring-ai-starter-model-ollama")
+    implementation("org.springframework.ai:spring-ai-starter-model-openai")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
+
     testImplementation("org.springframework.boot:spring-boot-starter-webmvc-test")
+    testImplementation("org.wiremock.integrations:wiremock-spring-boot:4.0.9")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
