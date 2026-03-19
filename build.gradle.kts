@@ -22,7 +22,7 @@ extra["springAiVersion"] = "2.0.0-M2"
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-webmvc")
-    //implementation("org.springframework.ai:spring-ai-starter-model-ollama")
+    implementation("org.springframework.ai:spring-ai-starter-model-ollama")
     implementation("org.springframework.ai:spring-ai-starter-model-openai")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
 
