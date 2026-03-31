@@ -18,17 +18,19 @@ repositories {
     mavenCentral()
 }
 
-extra["springAiVersion"] = "2.0.0-M2"
+extra["springAiVersion"] = "2.0.0-M4"
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-webmvc")
+    implementation("org.springframework.boot:spring-boot-starter-validation")
     implementation("org.springframework.ai:spring-ai-starter-model-ollama")
-    implementation("org.springframework.ai:spring-ai-starter-model-openai")
+    testImplementation("org.springframework.ai:spring-ai-starter-model-openai")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
 
     testImplementation("org.springframework.boot:spring-boot-starter-webmvc-test")
-    testImplementation("org.wiremock.integrations:wiremock-spring-boot:4.0.9")
+    testImplementation("org.wiremock.integrations:wiremock-spring-boot:4.2.1")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    testImplementation("com.fasterxml.jackson.core:jackson-core:2.21.1")
 }
 
 dependencyManagement {
