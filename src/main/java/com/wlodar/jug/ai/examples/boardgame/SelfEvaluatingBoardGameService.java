@@ -15,8 +15,8 @@ public class SelfEvaluatingBoardGameService implements BoardGameService{
 
     public SelfEvaluatingBoardGameService(ChatClient.Builder chatClientBuilder) {
         var chatOptions= ChatOptions.builder()
-                .model("mistral-3:8b")
-                .build();
+                .model("mistral-3:8b");
+                //.build();
 
 
         this.chatClient = chatClientBuilder.defaultOptions(chatOptions).build();

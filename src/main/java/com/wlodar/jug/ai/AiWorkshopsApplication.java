@@ -8,8 +8,8 @@ public class AiWorkshopsApplication {
 
     static void main(String[] args) {
         SpringApplication.run(AiWorkshopsApplication.class, args);
-        String zzz = "zzz";
-        System.out.println(zzz);
+        var test1 = "zzz";
+        System.out.println(test1);
 
 
     }
